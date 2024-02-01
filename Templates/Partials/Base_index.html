@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/core-style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+        
+    <title>JuliShop</title>
+</head>
+<body>
+  <div class="main-content-wrapper d-flex clearfix">
+    {% include './Partials/nav_index.html' %}
+
+    {% block body %}
+                
+    {% endblock %}
+  </div>
+    
+
+    {% include './Partials/footer_index.html' %}
+    <script src="{{url_for('static', filename='/js/jquery/jquery-2.2.4.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/popper.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/bootstrap.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/plugins.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/active.js')}}" ></script>
+</body>
+</html>
