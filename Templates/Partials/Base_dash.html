@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='/css/bootstrap.min.css')}}"> -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/simplebar.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/feather.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/select2.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/dropzone.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/uppy.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/jquery.steps.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/jquery.timepicker.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/quill.snow.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/app-light.css')}}" id="lightTheme">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/app-dark.css')}}" id="darkTheme" disabled>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/daterangepicker.css')}}">
+        
+    <title>JuliShop</title>
+</head>
+<body class="vertical  light  ">
+    <div class="wrapper">
+    {% include './Partials/nav_dash.html' %}
+
+    {% block body %}
+                
+    {% endblock %}
+  </div>
+    <script src="{{url_for('static', filename='/js/jquery.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/popper.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/moment.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/bootstrap.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/simplebar.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/jquery.stickOnScroll.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/tinycolor-min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/config.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/d3.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/topojson.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/datamaps.all.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/datamaps-zoomto.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/datamaps.custom.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/Chart.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='/js/apps.js')}}" ></script>
+
+</body>
+</html>

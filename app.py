@@ -35,6 +35,11 @@ def Panier():
 def Verifier():
     return render_template("Boutique/Verifier.html")
 
+@app.route("/Accueil")
+def Accueil():
+    return render_template("DashboadAdmin/accueil_dash.html")
+
+
 if __name__ == "__main__":
     app.secret_key = 'admin123'
     socketio.run(app, debug=True)
